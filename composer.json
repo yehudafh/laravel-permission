@@ -1,0 +1,49 @@
+{
+    "name": "yadahan/laravel-permission",
+    "description": "Laravel permission.",
+    "keywords": [
+        "laravel",
+        "permission"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yehuda fahima",
+            "email": "yehudafh@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "~5.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.4",
+        "mockery/mockery": "~0.9",
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yehudafh\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yehudafh\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Yehudafh\\PermissionServiceProvider"
+            ],
+            "aliases": {
+                "Permission": "Yehudafh\\Permission"
+            }
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
